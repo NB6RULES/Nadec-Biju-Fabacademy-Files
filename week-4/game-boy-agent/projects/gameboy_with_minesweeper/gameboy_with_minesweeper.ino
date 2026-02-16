@@ -78,6 +78,7 @@ enum GameId : uint8_t {
   GAME_CHECKERS_AI,      // NEW!
   GAME_CHECKERS_2P,      // Renamed from GAME_CHECKERS
   GAME_MINESWEEPER,      // Minesweeper!
+  GAME_DINO,             // NEW! Dino Run
   GAME_COUNT
 };
 
@@ -98,7 +99,8 @@ const char *GAME_NAMES[GAME_COUNT] = {
   "Tug of War 2P",
   "Checkers AI",         // NEW!
   "Checkers 2P",
-  "Minesweeper"
+  "Minesweeper",
+  "Dino Run"
 };
 
 // ========================================
@@ -391,6 +393,20 @@ struct Minesweeper {
   bool firstClick;          // First click can't be a mine
 };
 
+struct Dino {
+  int16_t playerY8;      // Player Y position * 8 for sub-pixel movement
+  int16_t velocityY8;    // Player Y velocity * 8
+  bool isCrouching;      // NEW: For dodging
+  int8_t obstacleX;      // X position of the current obstacle
+  int8_t obstacleY;      // Y position of obstacle (for flying ones)
+  uint8_t obstacleH;     // Height of the obstacle
+  uint8_t obstacleW;     // Width of the obstacle
+  uint8_t obstacleType;  // NEW: 0 for ground, 1 for flying
+  bool passedObstacle;   // If score was given for this obstacle
+  uint16_t moveInterval; // How fast the game scrolls
+  uint32_t lastMove;     // Time of last game tick
+};
+
 // ========================================
 // Memory-Optimized Game State Union
 // ========================================
@@ -410,6 +426,7 @@ union GameState {
   TugOfWar tug;
   Checkers checkers;     // NEW!
   Minesweeper minesweeper;
+  Dino dino;
 };
 
 GameState gameState;
@@ -420,6 +437,11 @@ GameState gameState;
 void initGame(GameId id);
 void updateGame(GameId id, uint32_t now);
 void drawGame(GameId id);
+
+// Dino Game forward declarations
+void dinoInit();
+void dinoUpdate(uint32_t now);
+void dinoDraw();
 
 // ========================================
 // Utility Functions
@@ -3438,6 +3460,155 @@ void minesweeperDraw() {
 }
 
 // ========================================
+// Dino Run Game
+// ========================================
+
+void dinoNewObstacle() {
+  gameState.dino.obstacleType = static_cast<uint8_t>(random(0, 2)); // 0=ground, 1=flying
+  gameState.dino.obstacleW = static_cast<uint8_t>(random(1, 3)); // 1 or 2 wide
+  gameState.dino.obstacleX = -gameState.dino.obstacleW; // Start off-screen left
+
+  if (gameState.dino.obstacleType == 0) { // Ground obstacle (cactus)
+    gameState.dino.obstacleH = static_cast<uint8_t>(random(1, 4)); // 1, 2, or 3 high
+    gameState.dino.obstacleY = 7; // Sits on the ground
+  } else { // Flying obstacle
+    gameState.dino.obstacleH = static_cast<uint8_t>(random(1, 3)); // 1 or 2 high
+    gameState.dino.obstacleY = static_cast<int8_t>(random(4, 6)); // y-pos 4 or 5
+  }
+  gameState.dino.passedObstacle = false;
+}
+
+void dinoInit() {
+  gameState.dino.playerY8 = 7 * 8; // Start on the ground (y=7)
+  gameState.dino.velocityY8 = 0;
+  gameState.dino.isCrouching = false;
+  gameState.dino.moveInterval = 150; // Initial speed
+  gameState.dino.lastMove = millis();
+  dinoNewObstacle();
+  score = 0;
+}
+
+void dinoUpdate(uint32_t now) {
+  if (takePress(B_PAUSE)) {
+    gamePaused = !gamePaused;
+    beepButton();
+  }
+  if (gamePaused) return;
+
+  const int8_t DINO_X_POS = 6;
+  int8_t playerY = static_cast<int8_t>(gameState.dino.playerY8 / 8);
+
+  // Handle crouching
+  if (isDown(B_DOWN) && playerY == 7) {
+    gameState.dino.isCrouching = true;
+  } else {
+    gameState.dino.isCrouching = false;
+  }
+
+  // JUMP: only if on the ground
+  if (takePress(B_UP) && playerY == 7 && !gameState.dino.isCrouching) {
+    float speedFactor = 150.0f / gameState.dino.moveInterval;
+    gameState.dino.velocityY8 = static_cast<int16_t>(-28.0f * speedFactor); // Increased jump speed
+    beepButton();
+  }
+
+  // Fast fall (spamming crouch in air)
+  if (takePress(B_DOWN) && playerY < 7) {
+    gameState.dino.velocityY8 += 30;
+  }
+
+  if (now - gameState.dino.lastMove < gameState.dino.moveInterval) return;
+  gameState.dino.lastMove = now;
+
+  float speedFactor = 150.0f / gameState.dino.moveInterval;
+
+  // Apply gravity
+  gameState.dino.velocityY8 += static_cast<int16_t>(6.0f * speedFactor); // Increased fall speed (gravity)
+  if (gameState.dino.velocityY8 > 24) {
+    gameState.dino.velocityY8 = 24; // Terminal velocity
+  }
+
+  // Update player position
+  gameState.dino.playerY8 += gameState.dino.velocityY8;
+
+  // Check for ground collision
+  if (gameState.dino.playerY8 >= 7 * 8) {
+    gameState.dino.playerY8 = 7 * 8;
+    gameState.dino.velocityY8 = 0;
+  }
+
+  // Move obstacle
+  gameState.dino.obstacleX++;
+
+  // Score obstacle
+  if (!gameState.dino.passedObstacle && gameState.dino.obstacleX > DINO_X_POS) {
+    gameState.dino.passedObstacle = true;
+    score++;
+    beepScore();
+    // Increase speed
+    if (gameState.dino.moveInterval > 60) {
+      gameState.dino.moveInterval -= 4;
+    }
+  }
+
+  // Spawn new obstacle when old one is off-screen
+  if (gameState.dino.obstacleX > 8) {
+    dinoNewObstacle();
+  }
+
+  // Collision detection
+  playerY = gameState.dino.isCrouching ? 7 : static_cast<int8_t>(gameState.dino.playerY8 / 8);
+  bool x_collision = (gameState.dino.obstacleX <= DINO_X_POS) && (DINO_X_POS < gameState.dino.obstacleX + gameState.dino.obstacleW);
+  if (x_collision) {
+    int8_t obstacleTopY, obstacleBottomY;
+    if (gameState.dino.obstacleType == 0) { // Ground
+      obstacleTopY = 8 - gameState.dino.obstacleH;
+      obstacleBottomY = 7;
+    } else { // Flying
+      obstacleTopY = gameState.dino.obstacleY;
+      obstacleBottomY = gameState.dino.obstacleY + gameState.dino.obstacleH - 1;
+    }
+
+    if (playerY >= obstacleTopY && playerY <= obstacleBottomY) {
+      beepHit();
+      finishGame(false, "Ouch!");
+      return;
+    }
+  }
+}
+
+void dinoDraw() {
+  clearFrame();
+
+  // Draw scrolling ground line
+  // The expression `(i - (millis()/100))` makes it scroll right-to-left
+  for (uint8_t i = 0; i < 8; i++) {
+    uint32_t groundColor = (( (i - (millis()/100)) % 4) < 2) ? Color(20,20,20) : Color(10,10,10);
+    setPixel(i, 7, groundColor);
+  }
+
+  // Draw player (dino)
+  const int8_t DINO_X_POS = 6;
+  int8_t playerY = static_cast<int8_t>(gameState.dino.playerY8 / 8);
+  if (gameState.dino.isCrouching) {
+    setPixel(DINO_X_POS, 7, Color(0, 40, 10)); // Dark green crouching dino
+  } else {
+    setPixel(DINO_X_POS, playerY, Color(0, 80, 20)); // Green dino
+  }
+
+  // Draw obstacle (cactus)
+  for (uint8_t w = 0; w < gameState.dino.obstacleW; ++w) {
+    for (uint8_t h = 0; h < gameState.dino.obstacleH; ++h) {
+      int8_t px = gameState.dino.obstacleX + w;
+      if (px >=0 && px < 8) {
+        int8_t py = (gameState.dino.obstacleType == 0) ? (7 - h) : (gameState.dino.obstacleY + h);
+        setPixel(px, py, Color(80, 40, 0));
+      }
+    }
+  }
+}
+
+// ========================================
 // Game Router Functions
 // ========================================
 
@@ -3460,6 +3631,7 @@ void initGame(GameId id) {
     case GAME_CHECKERS_AI: checkersInit(true); break;
     case GAME_CHECKERS_2P: checkersInit(false); break;
     case GAME_MINESWEEPER: minesweeperInit(); break;
+    case GAME_DINO: dinoInit(); break;
     default: break;
   }
 }
@@ -3483,6 +3655,7 @@ void updateGame(GameId id, uint32_t now) {
     case GAME_CHECKERS_AI:
     case GAME_CHECKERS_2P: checkersUpdate(now); break;
     case GAME_MINESWEEPER: minesweeperUpdate(now); break;
+    case GAME_DINO: dinoUpdate(now); break;
     default: break;
   }
 }
@@ -3506,6 +3679,7 @@ void drawGame(GameId id) {
     case GAME_CHECKERS_AI:
     case GAME_CHECKERS_2P: checkersDraw(); break;
     case GAME_MINESWEEPER: minesweeperDraw(); break;
+    case GAME_DINO: dinoDraw(); break;
     default: clearFrame(); break;
   }
 }
@@ -3549,7 +3723,7 @@ void drawMenuOLED() {
   oled.setTextColor(SSD1306_WHITE);
   
   oled.setCursor(0, 0);
-  oled.print("GameBoy RP2040");
+  oled.print("NB6_Boy");
   oled.setCursor(92, 0);
   oled.print(soundMuted ? "MUTE" : "SND");
   
@@ -3640,8 +3814,10 @@ void setup() {
   noTone(BUZZER);
   
   // Configure I2C for OLED display
-  Wire.setSDA(D4);
-  Wire.setSCL(D5);
+  // Wire.setSDA(D4);
+  // Wire.setSCL(D5);
+  // Pass the pins directly to begin(SDA, SCL)
+  Wire.begin(D4, D5);
   Wire.begin();
   
   // Initialize NeoPixel LED matrix
