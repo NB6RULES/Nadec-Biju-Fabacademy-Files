@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ArtecProject Version="6" Name="nadec scan" Uuid="{AE324A1F-84EA-432F-B58C-7D92BCC00D10}" Rev="1">
+	<Scans Count="2">
+		<Scan Uuid="{6B8D97E4-B387-4A52-9686-21939EC25ACC}" Name="Leo 1.1" Items="361" LoadMode="scan" Selected="false" Size_kb="147003" DataType="0" Locked="false" LockState="0" />
+		<Scan Uuid="{B5A6628E-30CD-403D-8A43-F32CBD7492BF}" Name="Leo 1.2" Items="413" LoadMode="scan" Selected="false" Size_kb="140388" DataType="0" Locked="false" LockState="0" />
+	</Scans>
+	<Groups>
+		<Group Uuid="{562B508F-C3EE-43ED-8252-BD707C9EDF13}" Title="nadec " IsOpen="true">
+			<Child Uuid="{D9663616-115C-4C1C-85AD-0F1B7C362DBD}" />
+		</Group>
+		<Group Uuid="{D9663616-115C-4C1C-85AD-0F1B7C362DBD}" Title="Scan Group 1" IsOpen="true">
+			<Child Uuid="{6B8D97E4-B387-4A52-9686-21939EC25ACC}" />
+			<Child Uuid="{B5A6628E-30CD-403D-8A43-F32CBD7492BF}" />
+		</Group>
+	</Groups>
+	<Sorting>
+		<Entry Uuid="{562B508F-C3EE-43ED-8252-BD707C9EDF13}" Index="0" />
+		<Entry Uuid="{6B8D97E4-B387-4A52-9686-21939EC25ACC}" Index="2" />
+		<Entry Uuid="{B5A6628E-30CD-403D-8A43-F32CBD7492BF}" Index="3" />
+		<Entry Uuid="{D9663616-115C-4C1C-85AD-0F1B7C362DBD}" Index="1" />
+	</Sorting>
+</ArtecProject>
