@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-xiao-esp32-c6", "id": "esp", "top": 547.77, "left": -389.42, "attrs": {} },
+    {
+      "type": "wokwi-led-matrix",
+      "id": "matrix1",
+      "top": -82.8,
+      "left": -465,
+      "attrs": { "rows": "8", "cols": "8" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 198.2,
+      "left": -403.2,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 303.8,
+      "left": -518.4,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 303.8,
+      "left": -278.4,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": 428.6,
+      "left": -393.6,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn5",
+      "top": 303.8,
+      "left": -403.2,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn6",
+      "top": 649.4,
+      "left": -633.6,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 559.94,
+      "left": -38.17,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 319.2,
+      "left": -833.4,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "btn5:2.r", "btn3:2.l", "black", [ "h0" ] ],
+    [ "btn5:2.l", "btn2:2.r", "black", [ "h0" ] ],
+    [ "btn1:2.l", "btn6:2.l", "black", [ "h-326.4", "v451.4", "h96" ] ],
+    [ "btn2:2.l", "btn6:2.r", "black", [ "h-28.8", "v240.2" ] ],
+    [ "btn3:2.r", "btn4:2.r", "black", [ "h19.4", "v134.6" ] ],
+    [ "btn4:2.l", "esp:GND", "black", [ "h-19.2", "v48.2", "h153.6", "v48" ] ],
+    [ "bz1:1", "btn6:2.l", "black", [ "v182.4" ] ],
+    [ "bz1:2", "esp:D0", "orange", [ "v0" ] ],
+    [ "btn1:1.l", "esp:D3", "blue", [ "h-201.6", "v9.6" ] ],
+    [ "btn4:1.l", "esp:D9", "gray", [ "h-76.8", "v288", "h192", "v-115.2" ] ],
+    [ "btn2:1.l", "esp:D2", "#8f4814", [ "h-57.6", "v259.2" ] ],
+    [ "esp:D7", "btn3:1.r", "green", [ "v0", "h183.02", "v-307.2" ] ],
+    [ "esp:D6", "btn5:1.l", "gold", [ "h-48", "v-307.2" ] ],
+    [ "btn6:1.r", "esp:D1", "white", [ "v0" ] ],
+    [ "oled1:GND", "btn4:2.r", "black", [ "v0" ] ],
+    [ "oled1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "esp:D4", "oled1:SDA", "purple", [ "h-57.6", "v86.4", "h547.2", "v-153.6", "h-76.8" ] ],
+    [ "oled1:SCL", "esp:D5", "magenta", [ "v-28.8", "h-105.3", "v134.4", "h-336", "v-28.8" ] ],
+    [ "matrix1:DIN", "esp:D10", "cyan", [ "v38.4", "h268.8", "v441.6" ] ],
+    [ "matrix1:VSS", "btn3:2.l", "black", [ "v57.6", "h66.4", "v163" ] ],
+    [ "matrix1:VDD", "esp:5V", "red", [ "v67.2", "h66.8", "v384", "h-19.82" ] ]
+  ],
+  "dependencies": {}
+}
