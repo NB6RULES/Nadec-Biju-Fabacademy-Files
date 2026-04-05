@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 25,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -36,8 +36,6 @@
       "grid",
       "footprints_front",
       "footprints_back",
-      "footprint_values",
-      "footprint_references",
       "tracks",
       "drc_errors",
       "drawing_sheet",
@@ -59,7 +57,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "gameboy less goiii.kicad_prl",
+    "filename": "gesture control board.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

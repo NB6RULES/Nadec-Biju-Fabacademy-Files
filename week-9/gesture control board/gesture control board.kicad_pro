@@ -188,7 +188,9 @@
       ],
       "track_widths": [
         0.0,
-        0.6
+        0.4,
+        0.6,
+        0.8
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -465,7 +467,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "gameboy less goiii.kicad_pro",
+    "filename": "gesture control board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -501,10 +503,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerber/",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "gameboy less goiii.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -611,14 +613,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -633,7 +627,7 @@
   },
   "sheets": [
     [
-      "9006bb50-f2e8-425a-b000-6a13a87612d7",
+      "6b987143-816b-4636-98df-e3c1d26b97c1",
       "Root"
     ]
   ],

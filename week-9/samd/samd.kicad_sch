@@ -2158,6 +2158,330 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "S4B-PH-SM4-TB:S4B-PH-SM4-TB"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -3.81 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "S4B-PH-SM4-TB"
+				(at -4.064 -10.414 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "S4B-PH-SM4-TB:JST_S4B-PH-SM4-TB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "JST Sales"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "5.5mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "CREATOR" "DIZAR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "VERIFIER" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "S4B-PH-SM4-TB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=473686&manufacturer=JST Sales&part_name=S4B-PH-SM4-TB&search_term=jst horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "Connector Header Surface Mount, Right Angle 4 position 0.079 (2.00mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "JST Sales"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "S4B-PH-SM4-TB_0_0"
+				(rectangle
+					(start -3.81 -7.62)
+					(end 5.08 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.175 2.2225)
+					(end -1.5875 2.8575)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.175 -0.3175)
+					(end -1.5875 0.3175)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.175 -2.8575)
+					(end -1.5875 -2.2225)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.175 -5.3975)
+					(end -1.5875 -4.7625)
+					(stroke
+						(width 0.1)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -5.08 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 44.45 87.63)
@@ -2187,6 +2511,16 @@
 	)
 	(polyline
 		(pts
+			(xy 148.59 110.49) (xy 151.13 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09413acf-93b2-41ed-9e36-92896cc9e53a")
+	)
+	(polyline
+		(pts
 			(xy 176.53 165.1) (xy 176.53 110.49)
 		)
 		(stroke
@@ -2194,6 +2528,16 @@
 			(type default)
 		)
 		(uuid "0a8abbbe-1039-46de-9d03-8aa1fd3750a0")
+	)
+	(polyline
+		(pts
+			(xy 152.4 69.85) (xy 152.4 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1264b9d9-cbd8-429a-9f73-e9b25e4e49b1")
 	)
 	(polyline
 		(pts
@@ -2214,6 +2558,26 @@
 			(type default)
 		)
 		(uuid "1a2e6805-965c-48c1-8463-24649ac8e19a")
+	)
+	(polyline
+		(pts
+			(xy 77.47 39.37) (xy 152.4 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "292991a1-1aed-4ad6-b686-a24816d48560")
+	)
+	(polyline
+		(pts
+			(xy 152.4 12.7) (xy 152.4 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be01afc-8aa1-4d49-9858-a78d2bbc5325")
 	)
 	(wire
 		(pts
@@ -2257,6 +2621,16 @@
 	)
 	(polyline
 		(pts
+			(xy 77.47 40.64) (xy 77.47 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69b80f7d-2ea2-42ba-b14e-edf26442a1d4")
+	)
+	(polyline
+		(pts
 			(xy 176.53 139.7) (xy 222.25 139.7)
 		)
 		(stroke
@@ -2267,6 +2641,16 @@
 	)
 	(polyline
 		(pts
+			(xy 114.3 12.7) (xy 114.3 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d97626d-150c-43f4-abac-b3610446b73b")
+	)
+	(polyline
+		(pts
 			(xy 77.47 172.72) (xy 77.47 139.7)
 		)
 		(stroke
@@ -2274,6 +2658,16 @@
 			(type default)
 		)
 		(uuid "a8c4ce89-6321-4392-bd04-bea66e49654e")
+	)
+	(polyline
+		(pts
+			(xy 77.47 69.85) (xy 152.4 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9d7bbab-5d39-412b-bbca-09026a6e4d85")
 	)
 	(polyline
 		(pts
@@ -2294,6 +2688,16 @@
 			(type default)
 		)
 		(uuid "b44baa53-fc7a-4aec-b6b4-61fad1e06b80")
+	)
+	(polyline
+		(pts
+			(xy 152.4 110.49) (xy 151.13 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8a5ad19-54c5-42d2-9611-d4901133eae1")
 	)
 	(wire
 		(pts
@@ -2433,6 +2837,28 @@
 			)
 		)
 	)
+	(global_label "PA17"
+		(shape input)
+		(at 99.06 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0e5cafd7-ca2c-4db7-8904-98e13300f093")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.8228 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PA00"
 		(shape input)
 		(at 110.49 123.19 0)
@@ -2468,6 +2894,28 @@
 		(uuid "12d8cfb7-bd71-484e-8aa4-a34e3090e89f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 116.9828 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA17"
+		(shape input)
+		(at 99.06 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1aa05099-9fe9-444d-b590-6013a4755201")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.8228 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,6 +2987,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V BUS"
+		(shape input)
+		(at 99.06 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b27ce73-9ea2-4c2c-b280-9255c440cb9c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.9114 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2655,7 +3125,7 @@
 	)
 	(global_label "PA17"
 		(shape input)
-		(at 130.81 80.01 90)
+		(at 127 83.82 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2665,7 +3135,7 @@
 		)
 		(uuid "4143ae70-85fb-4844-90f9-4f4efe2bc675")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.81 72.2472 90)
+			(at 127 76.0572 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2842,6 +3312,28 @@
 		(uuid "56389e35-02de-4b17-a537-dc6682ee4dc7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 166.5128 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA17"
+		(shape input)
+		(at 135.89 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5769e63a-67a0-4762-8943-be2fb873c406")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.6528 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3159,6 +3651,28 @@
 			)
 		)
 	)
+	(global_label "PA17"
+		(shape input)
+		(at 137.16 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "90bf2d20-1456-4385-844e-4ab3c53b50ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.9228 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PA07"
 		(shape input)
 		(at 236.22 97.79 180)
@@ -3243,6 +3757,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA16"
+		(shape input)
+		(at 99.06 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "96212298-3022-4b29-ad12-f5f56cdb2359")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.8228 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 99.06 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9cd23c25-09e4-4ff3-9fff-d70795134730")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.6738 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3335,6 +3893,28 @@
 			)
 		)
 	)
+	(global_label "PA16"
+		(shape input)
+		(at 99.06 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8cc7544-8982-4ea7-b79b-68fcf1da3abd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.8228 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PA15"
 		(shape input)
 		(at 236.22 77.47 180)
@@ -3401,9 +3981,31 @@
 			)
 		)
 	)
+	(global_label "PA16"
+		(shape input)
+		(at 137.16 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae83a725-1c37-4fec-9984-4e2df513ed58")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.9228 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VDD IN"
 		(shape input)
-		(at 130.81 90.17 270)
+		(at 127 93.98 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3413,7 +4015,7 @@
 		)
 		(uuid "b06f9c5e-cc40-4411-a483-0fbb8711e4ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.81 99.6867 90)
+			(at 127 103.4967 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,6 +4065,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PA16"
+		(shape input)
+		(at 135.89 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8a8cb33-6044-4182-a4d5-bac062ff6778")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.6528 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3557,7 +4181,7 @@
 	)
 	(global_label "VDD IN"
 		(shape input)
-		(at 93.98 90.17 270)
+		(at 90.17 93.98 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3567,7 +4191,7 @@
 		)
 		(uuid "d77f0789-eb1a-4cbe-ac69-bc3b5a94c4b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.98 99.6867 90)
+			(at 90.17 103.4967 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3687,6 +4311,28 @@
 			)
 		)
 	)
+	(global_label "VDD"
+		(shape input)
+		(at 137.16 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f291ae2b-2d5b-40f4-a66d-33b4180f17e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.7738 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PA23"
 		(shape input)
 		(at 207.01 151.13 0)
@@ -3775,6 +4421,28 @@
 			)
 		)
 	)
+	(global_label "V BUS"
+		(shape input)
+		(at 135.89 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f8a00c9a-f565-4d8c-a2a3-0577ac649885")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.7414 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SWCLK"
 		(shape input)
 		(at 236.22 39.37 180)
@@ -3821,7 +4489,7 @@
 	)
 	(global_label "PA16"
 		(shape input)
-		(at 93.98 80.01 90)
+		(at 90.17 83.82 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3831,7 +4499,7 @@
 		)
 		(uuid "fef83a29-6146-41d1-b779-aa7620e63c1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.98 72.2472 90)
+			(at 90.17 76.0572 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4089,8 +4757,223 @@
 		)
 	)
 	(symbol
+		(lib_id "S4B-PH-SM4-TB:S4B-PH-SM4-TB")
+		(at 128.27 30.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "246fe0dc-9857-4481-b547-102802154c54")
+		(property "Reference" "J8"
+			(at 127.635 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S4B-PH-SM4-TB"
+			(at 127.635 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "S4B-PH-SM4-TB:JST_S4B-PH-SM4-TB"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "JST Sales"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5.5mm"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" "DIZAR"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=eda"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=snap"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "S4B-PH-SM4-TB"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=473686&manufacturer=JST Sales&part_name=S4B-PH-SM4-TB&search_term=jst horizontal"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Connector Header Surface Mount, Right Angle 4 position 0.079 (2.00mm)"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "JST Sales"
+			(at 128.27 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4dc1975a-b9ea-4458-92cc-860e42079b55")
+		)
+		(pin "1"
+			(uuid "df31603a-c0ec-460c-b921-1aa2de4676ca")
+		)
+		(pin "3"
+			(uuid "90b5cfe7-0b2e-40fc-8cb7-ee585600676e")
+		)
+		(pin "4"
+			(uuid "880e47ae-ea03-428e-a564-a8d569a0a155")
+		)
+		(instances
+			(project "samd"
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_fab:R_1206")
-		(at 93.98 85.09 0)
+		(at 90.17 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4099,7 +4982,7 @@
 		(fields_autoplaced yes)
 		(uuid "2abe8d62-09d9-477b-90c8-9133b364832e")
 		(property "Reference" "R2"
-			(at 96.52 83.8199 0)
+			(at 92.71 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4108,7 +4991,7 @@
 			)
 		)
 		(property "Value" "4.7K"
-			(at 96.52 86.3599 0)
+			(at 92.71 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4117,7 +5000,7 @@
 			)
 		)
 		(property "Footprint" "PCM_fab:R_1206"
-			(at 93.98 85.09 90)
+			(at 90.17 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4126,7 +5009,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 85.09 0)
+			(at 90.17 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4135,7 +5018,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 93.98 85.09 0)
+			(at 90.17 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4366,6 +5249,140 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_fab:PWR_GND")
+		(at 135.89 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "525d0159-64c9-4808-b6a5-f9353cb01ebd")
+		(property "Reference" "#PWR011"
+			(at 142.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_GND"
+			(at 139.7 33.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0920c8fb-8546-4d10-8e4b-7992fffd1e22")
+		)
+		(instances
+			(project "samd"
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_fab:PWR_GND")
+		(at 137.16 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "555e89f0-1ab9-47f3-aa14-7f239867714c")
+		(property "Reference" "#PWR013"
+			(at 143.51 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_GND"
+			(at 140.97 59.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9f695cc-0033-42fe-95c7-7f770f696c8e")
+		)
+		(instances
+			(project "samd"
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_fab:PWR_FLAG")
 		(at 44.45 87.63 90)
 		(unit 1)
@@ -4427,6 +5444,288 @@
 			(project "samd"
 				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "S4B-PH-SM4-TB:S4B-PH-SM4-TB")
+		(at 129.54 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f0a6a1c-b82f-4a8f-924d-1443f145ad75")
+		(property "Reference" "J10"
+			(at 128.905 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S4B-PH-SM4-TB"
+			(at 128.905 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "S4B-PH-SM4-TB:JST_S4B-PH-SM4-TB"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "JST Sales"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5.5mm"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" "DIZAR"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=eda"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=snap"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "S4B-PH-SM4-TB"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=473686&manufacturer=JST Sales&part_name=S4B-PH-SM4-TB&search_term=jst horizontal"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Connector Header Surface Mount, Right Angle 4 position 0.079 (2.00mm)"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "JST Sales"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a19c17fb-d053-422d-90c0-e426b24caca8")
+		)
+		(pin "1"
+			(uuid "21d8cf20-1ce6-4057-bdc0-838670ff58e5")
+		)
+		(pin "3"
+			(uuid "71e466fb-0e51-4e6b-b0c5-0560fd31cce0")
+		)
+		(pin "4"
+			(uuid "31bf826d-8e8d-421e-87fa-e25d7aab34dd")
+		)
+		(instances
+			(project "samd"
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_fab:PWR_GND")
+		(at 99.06 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bb21238-b717-4fcc-ad8a-11f2345ad923")
+		(property "Reference" "#PWR012"
+			(at 105.41 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_GND"
+			(at 102.87 59.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c0953ba-968c-46e8-8fc6-179fb649063d")
+		)
+		(instances
+			(project "samd"
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4725,6 +6024,288 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_fab:PWR_GND")
+		(at 99.06 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b902bc9-a025-45b3-8ae5-f404b5e92ce7")
+		(property "Reference" "#PWR010"
+			(at 105.41 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_GND"
+			(at 102.87 33.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97bc7bc0-1ed5-4baa-ba91-094c6ae579c3")
+		)
+		(instances
+			(project "samd"
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "S4B-PH-SM4-TB:S4B-PH-SM4-TB")
+		(at 91.44 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "847fcffa-fe69-43b5-ad69-8c592f463915")
+		(property "Reference" "J9"
+			(at 90.805 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S4B-PH-SM4-TB"
+			(at 90.805 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "S4B-PH-SM4-TB:JST_S4B-PH-SM4-TB"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "JST Sales"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5.5mm"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" "DIZAR"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=eda"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=snap"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "S4B-PH-SM4-TB"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=473686&manufacturer=JST Sales&part_name=S4B-PH-SM4-TB&search_term=jst horizontal"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Connector Header Surface Mount, Right Angle 4 position 0.079 (2.00mm)"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "JST Sales"
+			(at 91.44 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c2c6dcee-9f6e-4fab-960f-e4e28b15e1a3")
+		)
+		(pin "1"
+			(uuid "d5ebf01d-e1f7-4a28-8978-a472bea0f38c")
+		)
+		(pin "3"
+			(uuid "4ac00070-e195-4f9e-912e-e26bfc6de920")
+		)
+		(pin "4"
+			(uuid "2b34614f-ae92-4f18-8a09-932c7b1d4369")
+		)
+		(instances
+			(project "samd"
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_Microchip_SAMD:ATSAMD21E17A-A")
 		(at 254 74.93 0)
 		(mirror x)
@@ -4945,6 +6526,221 @@
 			(project "samd"
 				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "S4B-PH-SM4-TB:S4B-PH-SM4-TB")
+		(at 91.44 30.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92b32a7b-5f5d-4a53-a489-8c89f7f9f56b")
+		(property "Reference" "J7"
+			(at 90.805 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S4B-PH-SM4-TB"
+			(at 90.805 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "S4B-PH-SM4-TB:JST_S4B-PH-SM4-TB"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "JST Sales"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5.5mm"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "CREATOR" "DIZAR"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=eda"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/S4B-PH-SM4-TB/JST/view-part/?ref=snap"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "S4B-PH-SM4-TB"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=473686&manufacturer=JST Sales&part_name=S4B-PH-SM4-TB&search_term=jst horizontal"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Connector Header Surface Mount, Right Angle 4 position 0.079 (2.00mm)"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "JST Sales"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "88692757-1e21-422c-b6d6-0a11313c6848")
+		)
+		(pin "1"
+			(uuid "e432291f-57a7-421a-af67-9b0cff1a8b9d")
+		)
+		(pin "3"
+			(uuid "1c1124d4-da16-4511-b375-b5f3ca7fc035")
+		)
+		(pin "4"
+			(uuid "938088a6-e7bc-4704-a5b6-aa0691fd550c")
+		)
+		(instances
+			(project ""
+				(path "/925aac2e-55d6-494c-ac26-0026335c0c89"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -5830,7 +7626,7 @@
 	)
 	(symbol
 		(lib_id "PCM_fab:R_1206")
-		(at 130.81 85.09 0)
+		(at 127 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5839,7 +7635,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2c5340a-1b73-4492-9acc-99d68dbfd0a8")
 		(property "Reference" "R3"
-			(at 133.35 83.8199 0)
+			(at 129.54 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5848,7 +7644,7 @@
 			)
 		)
 		(property "Value" "4.7K"
-			(at 133.35 86.3599 0)
+			(at 129.54 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5857,7 +7653,7 @@
 			)
 		)
 		(property "Footprint" "PCM_fab:R_1206"
-			(at 130.81 85.09 90)
+			(at 127 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5866,7 +7662,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 85.09 0)
+			(at 127 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5875,7 +7671,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 130.81 85.09 0)
+			(at 127 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)

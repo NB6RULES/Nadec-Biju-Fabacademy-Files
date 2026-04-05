@@ -1472,6 +1472,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_fab:PinHeader_01x04_P2.54mm_Vertical_THT_D1.4mm"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PinHeader_01x04_P2.54mm_Vertical_THT_D1.4mm"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_fab:PinHeader_01x04_P2.54mm_Vertical_THT_D1.4mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Male connector, single row"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "single row male connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*PinHeader*1x04*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PinHeader_01x04_P2.54mm_Vertical_THT_D1.4mm_1_1"
+				(rectangle
+					(start -1.27 3.175)
+					(end 1.27 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.27 0.635)
+					(end 1.27 -0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.27 -1.905)
+					(end 1.27 -3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.445)
+					(end 1.27 -5.715)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_fab:PinSocket_01x04_P2.54mm_Vertical_SMD"
 			(pin_names
 				(hide yes)
@@ -3498,6 +3686,16 @@
 		)
 		(uuid "92238405-8410-4fd5-a96a-71ba39cec4dd")
 	)
+	(wire
+		(pts
+			(xy 146.05 135.89) (xy 148.59 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9507e35d-d818-4fb5-b055-aad33f58de3c")
+	)
 	(polyline
 		(pts
 			(xy 12.7 132.08) (xy 71.12 132.08)
@@ -3540,6 +3738,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 92.71) (xy 170.18 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8ade7ad-fc40-4de9-99b1-35ce94aa8bdb")
+	)
+	(wire
+		(pts
 			(xy 109.22 38.1) (xy 109.22 35.56)
 		)
 		(stroke
@@ -3554,7 +3762,7 @@
 		)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(uuid "af36641f-bb64-4e1b-8eb9-05fad80822c2")
 	)
@@ -3590,6 +3798,16 @@
 	)
 	(polyline
 		(pts
+			(xy 130.81 73.66) (xy 196.85 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbcf8e85-fc13-47fe-9088-353181d14cfd")
+	)
+	(polyline
+		(pts
 			(xy 284.48 12.7) (xy 284.48 104.14)
 		)
 		(stroke
@@ -3610,7 +3828,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 133.35) (xy 160.02 133.35)
+			(xy 158.75 133.35) (xy 161.29 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3730,13 +3948,13 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 135.89) (xy 147.32 135.89)
+			(xy 168.91 90.17) (xy 170.18 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f2190f97-49e6-4b9b-a040-549fe3a2b73f")
+		(uuid "ee03823a-c95e-40ec-8046-c6d34394f210")
 	)
 	(polyline
 		(pts
@@ -4206,6 +4424,28 @@
 			)
 		)
 	)
+	(global_label "SDA"
+		(shape input)
+		(at 168.91 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "684dc4be-4ecf-410a-b1f8-098a65b64ff1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 175.4633 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D5"
 		(shape input)
 		(at 124.46 43.18 180)
@@ -4620,6 +4860,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 168.91 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf3894ff-0f0d-410c-b62b-2da69add0a33")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 175.4028 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5044,6 +5306,80 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_fab:PinHeader_01x04_P2.54mm_Vertical_THT_D1.4mm")
+		(at 163.83 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cadc538-edb7-489d-b8d0-69680b0a730c")
+		(property "Reference" "J4"
+			(at 163.83 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PinHeader_01x04_P2.54mm_Vertical_THT_D1.4mm"
+			(at 163.83 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_fab:PinHeader_01x04_P2.54mm_Vertical_THT_D1.4mm"
+			(at 163.83 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Male connector, single row"
+			(at 163.83 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "28588c3b-4b27-4159-a241-642bab96becf")
+		)
+		(pin "1"
+			(uuid "2a603de1-98d9-4413-8cfd-f17ca1aed50d")
+		)
+		(pin "4"
+			(uuid "2684ccf5-1b0c-43f5-bb22-f9da30e4ff00")
+		)
+		(pin "2"
+			(uuid "8d8b9d60-fb87-47fb-b6e9-9012d13625a6")
+		)
+		(instances
+			(project ""
+				(path "/9006bb50-f2e8-425a-b000-6a13a87612d7"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_fab:PWR_GND")
 		(at 262.89 40.64 90)
 		(unit 1)
@@ -5245,7 +5581,7 @@
 	)
 	(symbol
 		(lib_id "PCM_fab:PWR_3V3")
-		(at 147.32 135.89 90)
+		(at 161.29 133.35 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5254,7 +5590,7 @@
 		(fields_autoplaced yes)
 		(uuid "26e61ca4-ab1f-4362-adf9-96e7a9233c94")
 		(property "Reference" "#PWR013"
-			(at 151.13 135.89 0)
+			(at 157.48 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5263,7 +5599,7 @@
 			)
 		)
 		(property "Value" "PWR_3V3"
-			(at 143.51 135.8901 90)
+			(at 165.1 133.3499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5272,7 +5608,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 135.89 0)
+			(at 161.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5281,7 +5617,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 135.89 0)
+			(at 161.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5290,7 +5626,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 147.32 135.89 0)
+			(at 161.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5302,7 +5638,7 @@
 			(uuid "f6f2e8f1-cd96-4fa9-b582-48d6bd153fac")
 		)
 		(instances
-			(project ""
+			(project "gameboy less goiii"
 				(path "/9006bb50-f2e8-425a-b000-6a13a87612d7"
 					(reference "#PWR013")
 					(unit 1)
@@ -6406,6 +6742,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_fab:PWR_3V3")
+		(at 170.18 90.17 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5bb96ce1-13b0-4230-9401-e328032e8001")
+		(property "Reference" "#PWR033"
+			(at 166.37 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_3V3"
+			(at 173.99 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 170.18 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f80eab16-0b96-4a3e-877f-d903705e7ef8")
+		)
+		(instances
+			(project "gameboy less goiii"
+				(path "/9006bb50-f2e8-425a-b000-6a13a87612d7"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_fab:PWR_GND")
 		(at 33.02 59.69 0)
 		(unit 1)
@@ -6738,6 +7141,73 @@
 			(project ""
 				(path "/9006bb50-f2e8-425a-b000-6a13a87612d7"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_fab:PWR_GND")
+		(at 170.18 92.71 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "845a0c82-5709-4d2d-a73d-7423ee01668c")
+		(property "Reference" "#PWR034"
+			(at 176.53 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_GND"
+			(at 175.006 96.266 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46d95dcd-a31d-464c-a27c-ff417dd2b0be")
+		)
+		(instances
+			(project "gameboy less goiii"
+				(path "/9006bb50-f2e8-425a-b000-6a13a87612d7"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -7634,16 +8104,15 @@
 	)
 	(symbol
 		(lib_id "PCM_fab:PWR_GND")
-		(at 160.02 133.35 90)
+		(at 146.05 135.89 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b59a159c-e86d-438d-846a-00a953499716")
 		(property "Reference" "#PWR014"
-			(at 166.37 133.35 0)
+			(at 139.7 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7652,16 +8121,16 @@
 			)
 		)
 		(property "Value" "PWR_GND"
-			(at 163.83 133.3499 90)
+			(at 141.224 139.446 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 133.35 0)
+			(at 146.05 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7670,7 +8139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 133.35 0)
+			(at 146.05 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7679,7 +8148,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 133.35 0)
+			(at 146.05 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -77,6 +79,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -94,6 +97,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -113,9 +117,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -188,7 +195,8 @@
       ],
       "track_widths": [
         0.0,
-        0.6
+        0.6,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -225,17 +233,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -425,11 +444,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -452,6 +474,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -465,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "gameboy less goiii.kicad_pro",
+    "filename": "output devices.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -484,27 +507,155 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
+        "tuning_profile": "",
         "via_diameter": 1.4,
         "via_drill": 0.85,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.4,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 1.4,
+        "microvia_drill": 0.85,
+        "name": "GND",
+        "pcb_color": "rgb(2, 0, 0)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.1,
+        "tuning_profile": "",
+        "via_diameter": 1.4,
+        "via_drill": 0.85
+      },
+      {
+        "clearance": 0.4,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 1.4,
+        "microvia_drill": 0.85,
+        "name": "MOTOR-WIES",
+        "pcb_color": "rgb(255, 145, 0)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.1,
+        "tuning_profile": "",
+        "via_diameter": 1.4,
+        "via_drill": 0.85
+      },
+      {
+        "clearance": 0.4,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 1.4,
+        "microvia_drill": 0.85,
+        "name": "PWR",
+        "pcb_color": "rgb(255, 0, 26)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.1,
+        "tuning_profile": "",
+        "via_diameter": 1.4,
+        "via_drill": 0.85
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "EN": [
+        "PWR"
+      ],
+      "Net-(J3-Pin_1)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J3-Pin_2)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J3-Pin_3)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J3-Pin_4)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J4-Pin_1)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J4-Pin_2)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J4-Pin_3)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J4-Pin_4)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J5-Pin_1)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J5-Pin_2)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J5-Pin_3)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J5-Pin_4)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J6-Pin_1)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J6-Pin_2)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J6-Pin_3)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J6-Pin_4)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J7-Pin_1)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J7-Pin_2)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J7-Pin_3)": [
+        "MOTOR-WIES"
+      ],
+      "Net-(J7-Pin_4)": [
+        "MOTOR-WIES"
+      ],
+      "PWR_12V": [
+        "PWR"
+      ],
+      "PWR_5V": [
+        "PWR"
+      ],
+      "PWR_GND": [
+        "PWR"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "PWR",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "MOTOR-WIES",
+        "pattern": "J6"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerber/",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "gameboy less goiii.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -512,6 +663,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -583,6 +738,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -590,6 +746,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -611,16 +768,9 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -629,13 +779,28 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "output devices.kicad_sch",
+        "name": "output devices",
+        "uuid": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
-      "9006bb50-f2e8-425a-b000-6a13a87612d7",
+      "336cafdd-1dd8-4a5b-aef4-917ac9869827",
       "Root"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }
