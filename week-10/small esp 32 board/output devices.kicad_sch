@@ -3496,6 +3496,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 41.91) (xy 83.82 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "184ddc80-e266-4a99-9ad9-3cf14df57178")
+	)
+	(wire
+		(pts
 			(xy 123.19 36.83) (xy 123.19 38.1)
 		)
 		(stroke
@@ -3593,6 +3603,16 @@
 			(type default)
 		)
 		(uuid "2f00949c-fb82-42cb-9de3-0dfcb8175d14")
+	)
+	(wire
+		(pts
+			(xy 73.66 44.45) (xy 83.82 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31a7268a-0978-4812-9923-3c03aca22f78")
 	)
 	(wire
 		(pts
@@ -4123,6 +4143,16 @@
 			(type default)
 		)
 		(uuid "fa77423c-0cf1-4caf-80ae-9f59a171920e")
+	)
+	(wire
+		(pts
+			(xy 80.01 46.99) (xy 83.82 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb1c467c-7b0c-474c-a677-230b566e24ba")
 	)
 	(image
 		(at 427.99 129.54)
@@ -48627,7 +48657,7 @@
 	)
 	(symbol
 		(lib_id "PCM_fab:PWR_GND")
-		(at 83.82 46.99 270)
+		(at 80.01 46.99 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -48636,7 +48666,7 @@
 		(fields_autoplaced yes)
 		(uuid "5bdb6246-58c7-4039-a355-80fef5bef0b4")
 		(property "Reference" "#PWR030"
-			(at 77.47 46.99 0)
+			(at 73.66 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48645,7 +48675,7 @@
 			)
 		)
 		(property "Value" "PWR_GND"
-			(at 80.01 46.9899 90)
+			(at 76.2 46.9899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48654,7 +48684,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 46.99 0)
+			(at 80.01 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48663,7 +48693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 46.99 0)
+			(at 80.01 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48672,7 +48702,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 46.99 0)
+			(at 80.01 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49963,7 +49993,7 @@
 	)
 	(symbol
 		(lib_id "PCM_fab:PWR_GND")
-		(at 83.82 41.91 270)
+		(at 74.93 41.91 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -49972,7 +50002,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4ca6352-4054-46a5-ae7c-efe9899f636b")
 		(property "Reference" "#PWR028"
-			(at 77.47 41.91 0)
+			(at 68.58 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49981,7 +50011,7 @@
 			)
 		)
 		(property "Value" "PWR_GND"
-			(at 80.01 41.9099 90)
+			(at 71.12 41.9099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49990,7 +50020,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 41.91 0)
+			(at 74.93 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49999,7 +50029,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 41.91 0)
+			(at 74.93 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50008,7 +50038,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 41.91 0)
+			(at 74.93 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50368,7 +50398,7 @@
 	)
 	(symbol
 		(lib_id "PCM_fab:PWR_GND")
-		(at 83.82 44.45 270)
+		(at 73.66 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -50377,7 +50407,7 @@
 		(fields_autoplaced yes)
 		(uuid "c9f2bcb8-712e-4b2e-956e-c0883b79687b")
 		(property "Reference" "#PWR029"
-			(at 77.47 44.45 0)
+			(at 67.31 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50386,7 +50416,7 @@
 			)
 		)
 		(property "Value" "PWR_GND"
-			(at 80.01 44.4499 90)
+			(at 69.85 44.4499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50395,7 +50425,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 44.45 0)
+			(at 73.66 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50404,7 +50434,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 44.45 0)
+			(at 73.66 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50413,7 +50443,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 44.45 0)
+			(at 73.66 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51337,8 +51367,8 @@
 				)
 			)
 		)
-		(property "Value" "PinHeader_01x04_P2.54mm_Horizontal_SMD"
-			(at 128.27 33.02 0)
+		(property "Value" "motor"
+			(at 133.858 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)

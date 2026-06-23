@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<ArtecProject Version="6" Name="nadec scan" Uuid="{AE324A1F-84EA-432F-B58C-7D92BCC00D10}" Rev="1">
-	<Scans Count="2">
+<ArtecProject Version="6" Name="nadec scan" Uuid="{AE324A1F-84EA-432F-B58C-7D92BCC00D10}" Rev="2">
+	<Scans Count="3">
 		<Scan Uuid="{6B8D97E4-B387-4A52-9686-21939EC25ACC}" Name="Leo 1.1" Items="361" LoadMode="scan" Selected="false" Size_kb="147003" DataType="0" Locked="false" LockState="0" />
 		<Scan Uuid="{B5A6628E-30CD-403D-8A43-F32CBD7492BF}" Name="Leo 1.2" Items="413" LoadMode="scan" Selected="false" Size_kb="140388" DataType="0" Locked="false" LockState="0" />
+		<Scan Uuid="{3079A822-A8C8-478D-AB60-5ACA10357EEA}" Name="Sharp fusion 1" Items="1" LoadMode="scan" Selected="true" Size_kb="71935" DataType="1" Locked="false" LockState="0" />
 	</Scans>
 	<Groups>
 		<Group Uuid="{562B508F-C3EE-43ED-8252-BD707C9EDF13}" Title="nadec " IsOpen="true">
@@ -14,6 +15,7 @@
 		</Group>
 	</Groups>
 	<Sorting>
+		<Entry Uuid="{3079A822-A8C8-478D-AB60-5ACA10357EEA}" Index="4" />
 		<Entry Uuid="{562B508F-C3EE-43ED-8252-BD707C9EDF13}" Index="0" />
 		<Entry Uuid="{6B8D97E4-B387-4A52-9686-21939EC25ACC}" Index="2" />
 		<Entry Uuid="{B5A6628E-30CD-403D-8A43-F32CBD7492BF}" Index="3" />

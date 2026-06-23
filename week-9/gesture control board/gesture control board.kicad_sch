@@ -3096,6 +3096,12 @@
 		(uuid "2932af1a-4150-44f2-ab2e-9c91907daa80")
 	)
 	(junction
+		(at 68.58 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "527fcb02-8019-45b0-bd41-03ace525ba2c")
+	)
+	(junction
 		(at 246.38 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3162,16 +3168,6 @@
 			(type default)
 		)
 		(uuid "02a53811-6630-44d3-95ce-d5c985022cd5")
-	)
-	(wire
-		(pts
-			(xy 66.04 154.94) (xy 63.5 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03c43f64-4791-4b5c-a496-bbba3d6957c7")
 	)
 	(wire
 		(pts
@@ -3342,6 +3338,26 @@
 			(type default)
 		)
 		(uuid "60f43b94-9789-4c90-b415-342c98dbf464")
+	)
+	(wire
+		(pts
+			(xy 68.58 149.86) (xy 68.58 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6506ac9b-f2c4-475d-a16d-faafa67af84c")
+	)
+	(wire
+		(pts
+			(xy 162.56 35.56) (xy 140.97 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1a2adf-56ee-42fb-acff-898baa575f9b")
 	)
 	(polyline
 		(pts
@@ -3523,6 +3539,16 @@
 		)
 		(uuid "afd94dfc-6a8f-456b-a5a9-3d71bb201621")
 	)
+	(wire
+		(pts
+			(xy 63.5 154.94) (xy 68.58 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3ad7014-7e44-45b8-a64a-b8722bb3cda5")
+	)
 	(polyline
 		(pts
 			(xy 93.98 49.53) (xy 284.48 49.53)
@@ -3562,6 +3588,16 @@
 			(type default)
 		)
 		(uuid "dd062f96-c698-40a8-a2a2-c959d2c78d04")
+	)
+	(wire
+		(pts
+			(xy 72.39 154.94) (xy 68.58 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf4c625-2db9-4225-9f99-e58ea0f8ff46")
 	)
 	(wire
 		(pts
@@ -18078,28 +18114,6 @@
 			)
 		)
 	)
-	(global_label "VIN"
-		(shape input)
-		(at 140.97 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7a3c9afe-82d4-49dc-82f7-83aa12a3d4d2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.9791 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SDA"
 		(shape input)
 		(at 123.19 86.36 180)
@@ -18476,7 +18490,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 66.04 154.94 0)
+		(at 72.39 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18486,7 +18500,7 @@
 		)
 		(uuid "c6a75542-e7cd-4465-9b92-6bfed68934d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.8957 154.94 0)
+			(at 79.2457 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20779,6 +20793,72 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_fab:PWR_GND")
+		(at 68.58 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6914ecc-a36f-4b86-afad-7af75673245d")
+		(property "Reference" "#PWR08"
+			(at 68.58 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_GND"
+			(at 68.58 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3aa6cb19-ae80-4173-a6d1-20a1dd5a67dd")
+		)
+		(instances
+			(project "gesture control board"
+				(path "/6b987143-816b-4636-98df-e3c1d26b97c1"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_fab:PWR_FLAG")
 		(at 138.43 113.03 270)
 		(unit 1)
@@ -20907,6 +20987,73 @@
 			(project ""
 				(path "/6b987143-816b-4636-98df-e3c1d26b97c1"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_fab:PWR_5V")
+		(at 162.56 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd0baad4-63dd-41e6-86a4-6b503c0e1f90")
+		(property "Reference" "#PWR06"
+			(at 158.75 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_5V"
+			(at 166.37 35.5599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 162.56 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec9925a5-03b0-4188-ae47-3ddd40322fd3")
+		)
+		(instances
+			(project "gesture control board"
+				(path "/6b987143-816b-4636-98df-e3c1d26b97c1"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)

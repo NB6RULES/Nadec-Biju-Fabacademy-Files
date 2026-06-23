@@ -1,4 +1,11 @@
 <?xml version="1.0"?>
 <History Version="6">
-	<Commands Count="0" Position="-1" />
+	<Commands Count="6" Position="5">
+		<Command Uuid="{F5701D20-C360-4CC9-B7C1-16FF9F5F4E54}" Name="Global registration" Status="e" Ecmd="15045" Size="374360" />
+		<Command Uuid="{198F1AB9-C97F-48C1-B2E3-B09CF6314A7B}" Name="Sharp fusion" Status="e" Ecmd="15045" Size="52751288" />
+		<Command Uuid="{D97B6586-3A93-4D98-A03B-584C73ED6ED2}" Name="Small-object filter" Status="e" Ecmd="15045" Size="52748800" />
+		<Command Uuid="{5EEFB7C0-829A-4E89-9C14-CF37335B26EC}" Name="Fast mesh simplification" Status="e" Ecmd="15045" Size="45775464" />
+		<Command Uuid="{5775111D-F13E-4CA5-86EC-0446E3CD7A08}" Name="Texturize surface" Status="e" Ecmd="15045" Size="0" />
+		<Command Uuid="{7093C072-CAAF-42E1-AAEA-EB776227A1E1}" Name="Adjust texture" Status="e" Ecmd="15045" Size="32663776" />
+	</Commands>
 </History>

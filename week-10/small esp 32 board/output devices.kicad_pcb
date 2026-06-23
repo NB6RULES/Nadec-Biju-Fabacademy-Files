@@ -161,6 +161,8 @@
 	(net 42 "Net-(J3-Pin_4)")
 	(net 43 "Net-(J3-Pin_1)")
 	(net 44 "Net-(J3-Pin_3)")
+	(net 45 "unconnected-(JP1-B-Pad2)")
+	(net 46 "unconnected-(JP1-A-Pad1)")
 	(footprint "PCM_fab:C_1206"
 		(layer "F.Cu")
 		(uuid "03edac31-eb20-4715-a38b-2ead1c641daa")
@@ -1032,6 +1034,157 @@
 			)
 			(rotate
 				(xyz 0 0 90)
+			)
+		)
+	)
+	(footprint "PCM_fab:Jumper_1206"
+		(layer "F.Cu")
+		(uuid "35e6a27b-7136-4a3b-8e54-430cd400d9b6")
+		(at 52.55 71.75)
+		(descr "Jumper, based on SMD 1206 resistor")
+		(tags "jumper smd 1206")
+		(property "Reference" "JP1"
+			(at 0 -1.85 0)
+			(layer "F.SilkS")
+			(uuid "4e61e81a-2828-460f-9c83-81b06e67772c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 0 1.9 0)
+			(layer "F.Fab")
+			(uuid "d81a85da-ba6b-4c1b-90f6-9bc62b481cae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "434ef0c1-70a2-41e7-8ba3-1f3f1f8f8afb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fe55816-0685-4135-997c-d81ec5d1cbba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
+		(path "/4140a84f-6d7d-4a32-9564-9b70afe62b7d")
+		(sheetname "/")
+		(sheetfile "output devices.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1 -1.07)
+			(end 1 -1.07)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "afff22d9-6460-4c3b-b5e9-c9977b034d0a")
+		)
+		(fp_line
+			(start 1 1.07)
+			(end -1 1.07)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5eca9551-9f23-4908-8712-aae41c6c97f7")
+		)
+		(fp_rect
+			(start -2.7 -1.1)
+			(end 2.6 1.1)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "cf79f362-0449-452d-b59c-607eee810b83")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ae8d9194-7e91-4105-8563-ef47715a7ff7")
+		)
+		(fp_rect
+			(start -1.55 -0.8)
+			(end 1.55 0.8)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "d35312b0-029c-41ad-967f-f6577f4e3147")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "140a4160-1db0-411a-8947-cfe84556b6c6")
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.105)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -1.7 0)
+			(size 1.4 1.7)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 46 "unconnected-(JP1-A-Pad1)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "b34520eb-dc97-4d8a-a706-caf1db1a153e")
+		)
+		(pad "2" smd rect
+			(at 1.7 0)
+			(size 1.4 1.7)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 45 "unconnected-(JP1-B-Pad2)")
+			(pinfunction "B")
+			(pintype "passive")
+			(uuid "98e7b75b-4411-4e63-bd98-c5fb3fca7bdb")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3RD_PARTY}/3dmodels/org_fabcloud_gitlab_electronics_kicad/fab.3dshapes/R_1206.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -4217,7 +4370,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PinHeader_01x04_P2.54mm_Horizontal_SMD"
+		(property "Value" "motor"
 			(at 0 10.795 90)
 			(layer "F.Fab")
 			(uuid "1547e3e3-b789-40d4-b64f-3ba7b8f58ab6")
